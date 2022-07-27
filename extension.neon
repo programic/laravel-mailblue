@@ -1,0 +1,5 @@
+services:
+    -
+        class: Programic\MailBlue\Reflection\ReferenceClassReflectionExtension
+        tags:
+            - phpstan.broker.methodsClassReflectionExtension

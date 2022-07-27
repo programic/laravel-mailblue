@@ -1,0 +1,64 @@
+{
+    "name": "programic/laravel-mailblue",
+    "license": "proprietary",
+    "type": "package",
+    "description": "Laravel extension for MailBlue API",
+    "keywords": [
+        "programic",
+        "laravel",
+        "mailblue"
+    ],
+    "readme": "README.md",
+    "authors": [
+        {
+            "name": "Programic",
+            "email": "development@programic.com",
+            "homepage": "https://programic.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4",
+        "laravel/framework": "^8.0|^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.1",
+        "phpstan/extension-installer": "^1.0",
+        "phpstan/phpstan": "^0.12.54 || ^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Programic\\MailBlue\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Programic\\MailBlue\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Programic\\MailBlue\\MailBlueServiceProvider"
+            ]
+        },
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
