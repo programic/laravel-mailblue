@@ -50,7 +50,7 @@
         }
     },
     "scripts": {
-        "test": "phpunit"
+        "test": "phpunit tests"
     },
     "config": {
         "process-timeout": 0,
